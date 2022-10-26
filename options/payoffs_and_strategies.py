@@ -14,6 +14,7 @@ def black_scholes(r, S0, K, T, sigma, option_type='c'):
         sigma: volatility
         option_type: type
     """
+    
     print(f"B-S price parameters:\nS0={S0}\nK={K}\nT={T}\nsigma={sigma}\nr={r}\n")
     d1 = (np.log(S0 / K) + (r + sigma ** 2 / 2) * T) / (sigma * np.sqrt(T))
     print('d1:', d1)
